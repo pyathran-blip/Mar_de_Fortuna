@@ -21,21 +21,23 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Preparar Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          cmdline-tools-version: 12266719
-          accept-android-sdk-licenses: true
-
-      - name: Instalar plataforma y herramientas Android
+      - name: Instalar componentes del Android SDK
         run: |
-          yes | sdkmanager --licenses || true
-          sdkmanager "platforms;android-35" "build-tools;35.0.0" "platform-tools"
+          SDK_ROOT="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
+          SDKMANAGER="$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | head -n 1)"
+          if [ -z "$SDKMANAGER" ]; then echo 'sdkmanager não encontrado'; exit 1; fi
+          yes | "$SDKMANAGER" --licenses || true
+          "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0" "platform-tools"
 
-      - name: Compilar APK instalable de prueba
+      - name: Copiar o jogo para os recursos do Android
+        run: |
+          mkdir -p app/src/main/assets
+          cp index.html app/src/main/assets/index.html
+
+      - name: Compilar APK de teste
         run: gradle --no-daemon :app:assembleDebug
 
-      - name: Publicar APK como artefacto descargable
+      - name: Disponibilizar APK para download
         uses: actions/upload-artifact@v4
         with:
           name: Mar-de-Fortuna-APK
