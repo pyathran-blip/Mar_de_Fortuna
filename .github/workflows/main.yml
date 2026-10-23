@@ -1,4 +1,4 @@
-name: Construir APK Mar de Fortuna
+name: Construir e publicar APK Mar de Fortuna
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -37,10 +37,25 @@ jobs:
       - name: Compilar APK de teste
         run: gradle --no-daemon :app:assembleDebug
 
-      - name: Disponibilizar APK para download
+      - name: Preparar nome do APK público
+        run: cp app/build/outputs/apk/debug/app-debug.apk Mar-de-Fortuna.apk
+
+      - name: Disponibilizar artefato temporário
         uses: actions/upload-artifact@v4
         with:
           name: Mar-de-Fortuna-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: Mar-de-Fortuna.apk
           if-no-files-found: error
           retention-days: 14
+
+      - name: Publicar APK em uma Release pública
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: apk-${{ github.run_number }}
+          name: Mar de Fortuna APK (build ${{ github.run_number }})
+          body: |
+            APK Android de teste do jogo Mar de Fortuna.
+            
+            Instale no Android por sua conta e risco; esta é uma versão de teste, não uma publicação da Google Play.
+          files: Mar-de-Fortuna.apk
+          make_latest: true
