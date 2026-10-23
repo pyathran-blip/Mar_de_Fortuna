@@ -1,0 +1,60 @@
+MAR DA FORTUNA v4 — Jogo de pesca (mouse; também tela de toque e controle)
+=========================================================================
+
+COMO JOGAR
+- Clique duas vezes em index.html (ou JUGAR.bat no Windows). É um arquivo único: música,
+  logo, barco e moeda estão embutidos. Não precisa de internet. Recomendado: Chrome, Edge
+  ou Firefox atualizados.
+- Idioma: Español / English / Português — na tela inicial ou em "Visualização". Fica salvo.
+
+CONTROLES COM MOUSE (principal)
+- Clique esquerdo na água: lançar a vara (ou o covo). Mova o mouse para guiar o anzol.
+  Outro clique: recolher.
+- Quando um peixe morder: SEGURE o botão esquerdo para recolher e SOLTE quando a tensão
+  chegar perto do vermelho.
+- Segurar e arrastar (no barco ou na água): mover o barco.
+- Clique do meio (roda): pular na água / voltar ao barco.
+- Debaixo d'água o mergulhador segue o mouse. Clique esquerdo: disparar o arpão.
+- Teclado (opcional): P ou Esc = pausa, M = som.
+TELA DE TOQUE: toque para lançar/recolher, segure e arraste para mover o barco ou puxar a
+linha, toque com dois dedos (ou o botão redondo 🤿) para mergulhar/subir; debaixo d'água
+o mergulhador segue o seu dedo.
+CONTROLE (Gamepad): analógico esquerdo = barco (no barco) / anzol / mergulhador,
+analógico direito = cursor; A = lançar/recolher (segurar = puxar), B = mergulhar/subir,
+Start = pausa.
+
+O JOGO
+- 15 níveis com cenário, espécies e meta de vendas próprios; 28 espécies; covos (a partir
+  do nível 2); tubarões (um "!" vermelho indica perseguição — perto da superfície você está
+  a salvo); baús; aquário; clima e dia/noite; 25 medalhas; mapa de ilhas; loja de melhorias
+  (compra-se no barco).
+- Nível 15: compre o Arpão, desça ao covil e acerte a cabeça do Kraken (3 fases).
+- Flopin, uma caturrita, está sempre com Lorenzo, o pescador: no ombro dele ou na borda do
+  barco. Ele fala (balão + voz), avisa de tubarões, mordidas raras, baús e oxigênio baixo
+  e, com a melhoria "Flopin", traz peixinhos ou moedas.
+
+JOGOS SALVOS: automático, 3 espaços (nome, nível, dificuldade, tempo de jogo). Criar /
+jogar / apagar (com confirmação) / exportar / importar por espaço. Um jogo antigo vai
+para o espaço 1.
+DIFICULDADE: Fácil / Normal / Difícil — muda as metas de venda, a agressividade e o dano
+dos tubarões, o gasto de oxigênio e os preços da loja.
+
+FINAL: ao vencer o Kraken: sequência animada ao pôr do sol, um epílogo ilustrado e a tela
+FIM com estatísticas e créditos. Depois, "Continuar jogando (modo livre)" ou "Novo Jogo+"
+(mais difícil; você mantém medalhas, coleção, aquário e visual do barco).
+
+SOM: o tema MP3 do jogo na superfície e nas primeiras zonas; trilhas ambientes originais
+(WebAudio) nas zonas profunda, ártica, vulcânica, abismo e Kraken (transições suaves);
+ondas, respingos, gaivotas, canto de baleia, bolhas, chuva e trovões sintetizados.
+Controles separados de MÚSICA e EFEITOS.
+
+O áudio começa com o primeiro clique, tecla ou toque (regra dos navegadores) e é
+retomado automaticamente se o navegador o suspender. Flopin fala com a voz do sistema e
+também chilreia como um periquito (ouve-se mesmo sem vozes instaladas).
+
+VISUALIZAÇÃO: tela fixa de 960x640 escalada pelo navegador (rápido em PCs modestos).
+Botão "Visualização": efeitos e partículas Baixos / Normais / Altos, tamanho da interface, modo de tela, FPS, efeitos de clima, tremor de
+tela, modo daltônico, alto contraste, brilho, reduzir movimento.
+Fontes: Baloo 2 e Nunito (SIL Open Font License 1.1).
+
+Contato: +56 9 6859 2839

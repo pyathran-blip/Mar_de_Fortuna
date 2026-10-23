@@ -1,0 +1,140 @@
+MAR DE FORTUNA v4 — Juego de pesca (ratón; también pantalla táctil y mando)
+(English: README_EN.txt · Português: LEIAME_PT.txt)
+=====================================================
+
+CÓMO JUGAR
+- Doble clic en index.html (o en JUGAR.bat en Windows). Es un único archivo:
+  la música, el logo, la barca y la moneda van incrustados. No hace falta internet.
+- Recomendado: Chrome, Edge o Firefox actualizados.
+
+CONTROLES (RATÓN, el control principal)
+- Clic izquierdo rápido en el agua: lanzar la caña (o la nasa).
+- Mueve el ratón: guías el anzuelo bajo el agua. Otro clic: recoger el sedal.
+- Cuando un pez pica: MANTÉN pulsado el botón izquierdo para recoger y SUELTA
+  cuando la tensión se acerque a la zona roja (si no, el sedal se rompe).
+- Mantener pulsado y arrastrar (sobre la barca o en el agua): mover la barca.
+- Clic central (rueda): saltar al agua / volver a la barca (si estás lejos,
+  el buceador vuelve nadando solo).
+- Bajo el agua el buceador sigue al ratón. Toca peces y monedas para cogerlos.
+  Clic izquierdo: disparar el arpón hacia el cursor (necesita el Arpón).
+- Botón derecho: no hace nada (menú contextual desactivado en el juego).
+- Botones: Vender (solo en la barca), Caña/Nasa, Tienda (debajo del juego),
+  Pausa, Cómo jugar, Pantalla completa, Guardar/Importar, Sonido y volumen.
+- Teclado opcional: P o Esc = pausa, M = sonido.
+
+PANTALLA TÁCTIL: toca el agua para lanzar/recoger, mantén y arrastra para mover la barca
+o tensar el sedal, toque con dos dedos (o el botón redondo 🤿) para bucear/subir; bajo el
+agua el buceador sigue tu dedo.
+MANDO (Gamepad): stick izquierdo = mover la barca (en la barca) / el anzuelo / el buceador,
+stick derecho = cursor; A = lanzar/recoger (mantener = tensar), B = bucear/subir, Start = pausa.
+- Si no tocas nada durante 60 segundos, el pescador se pone a tararear
+  («♪ Yesterday… ♪»: solo el título; la melodía es original). Cualquier
+  movimiento del ratón o tecla lo para.
+
+NIVELES (15) — cada uno con su entorno, especies y meta de ventas («NIVEL X / 15»):
+ 1 Bahía Soleada (600) · 2 Arrecife de Coral (1.000) · 3 Bosque de Kelp (1.600)
+ 4 Costa Rocosa (2.500) · 5 Atardecer Dorado (3.600) · 6 Tormenta (5.000)
+ 7 El Pecio (7.000) · 8 Noche de Luna (9.500, oscuro) · 9 Mar Ártico (12.500, frío)
+ 10 Fiordo con Niebla (16.000, frío) · 11 Fosa Volcánica (20.500)
+ 12 Cuevas Submarinas (26.000) · 13 Aurora Austral (33.000, frío y oscuro)
+ 14 Abismo Bioluminiscente (42.000, muy oscuro) · 15 Guarida del Kraken (jefe final)
+Las monedas y mejoras se conservan entre niveles.
+
+TIENDA (25 mejoras, se compran solo en la barca)
+ Pesca: Caña (5 niveles, de bambú a caña de leyenda), Sedal resistente (6),
+   Sedal largo (5), Carrete veloz (5), Anzuelos de calidad (5), Cebo (5).
+ Nasas: Más nasas (hasta 4 a la vez), Nasa grande (5), Cebo para nasas (5).
+ Barca: Barco nuevo (3: Barca reforzada, Lancha pesquera, Pesquero de altura;
+   más nevera y velocidad; la barca de madera original es la inicial),
+   Motor fueraborda (4), Sonar (4), Farol (4, niveles oscuros),
+   Nevera grande (6), Congelador (4).
+ Comercio: Puesto de venta (5, sube el precio de cada pieza), Imán de monedas (4).
+ Compañero: Flopin la cotorra (4). Flopin, una cotorra argentina, va siempre con
+   Lorenzo (el pescador): posado en su hombro o en la borda. Cuando Lorenzo bucea,
+   Flopin espera en la barca. Habla («¡Lorenzo!», «¡Cuidado, tiburón!»...) con bocadillo
+   y voz (síntesis de voz del navegador + graznido). Avisa de tiburones, picadas raras,
+   cofres y oxígeno bajo, y con la mejora atrapa peces pequeños de la superficie o trae
+   monedas («¡Flopin te trajo un Jurel!»).
+ Buceo: Tanque de oxígeno (6), Aletas rápidas (5), Traje térmico (3, aguas heladas).
+ Defensa: Arpón daño (6), Arpón recarga (5), Repelente antitiburón (5),
+   Jaula antitiburón (4, aguanta mordiscos).
+
+NASAS (desde el nivel 2): elige «Nasa» arriba a la derecha del juego, clic en el agua
+para lanzarla, se hunde, se llena poco a poco y con un clic sobre ella la subes.
+
+TIBURONES: de arrecife, gran tiburón blanco y tiburón martillo. Un «!» rojo indica
+que te persiguen. Si te muerden pierdes solo la bolsa y reapareces en la barca.
+Cerca de la superficie estás a salvo.
+
+KRAKEN (nivel 15): compra el Arpón, baja a la guarida y dispara a su cabeza.
+Tiene 3 fases cada vez más duras. Recompensa: 10.000 monedas + Perla del Kraken.
+
+GUARDADO: automático en el navegador, con 3 RANURAS (nombre, nivel, dificultad y tiempo
+jugado). En la pantalla de inicio: Crear (nombre + dificultad), Jugar, Borrar (pide
+confirmación), ⬇ Exportar y ⬆ Importar por ranura. La partida antigua pasa a la ranura 1.
+«Guardar» descarga un JSON; «Importar» lo carga.
+
+DIFICULTAD (al crear la partida): Fácil / Normal / Difícil. Cambia las metas de venta,
+la agresividad y el daño de los tiburones, el gasto de oxígeno y los precios de la tienda.
+
+DURACIÓN: pensado para varias horas. En la prueba automática (que juega mejor que
+una persona nueva) completar los 15 niveles lleva unas 3-4 horas de juego.
+
+NOVEDADES (última actualización)
+- Interfaz discreta: avisos pequeños en una barra fina bajo el juego (se desvanecen solos);
+  los controles completos solo en "Cómo jugar". En pantalla completa, la barra va dentro del juego.
+- ACUARIO: en la nevera, "🐠 Al acuario" expone una captura en vez de venderla. Botón "Acuario":
+  tanque animado + registro de las 28 especies (siluetas sin descubrir, mejor talla, rareza).
+  Da ingresos pasivos por especie expuesta y bonos de colección (5/10/15/20/28 especies).
+  Mejora "Acuario" en la tienda (5 niveles, capacidad 4→28).
+- CLIMA dinámico: sol, lluvia, niebla, tormenta (olas y rayos). Tormenta = más picadas raras
+  pero barca más movida; niebla = menos visibilidad (el farol ayuda).
+- DÍA/NOCHE: ciclo de 4 minutos. 4 peces nocturnos (Bagre lunar, Catalufa ojo de luna,
+  Pez hacha plateado, Pez víbora) solo de noche.
+- LOGROS: 25 medallas de bronce/plata/oro (botón "Logros").
+- COFRES en el fondo (madera/plata/oro): tócalos buceando; monedas, cebo raro y piezas de
+  equipo (3 piezas = mejora gratis). Algunos los vigilan tiburones; el sonar los señala.
+- MAPA: 5 islas/puertos que se desbloquean por nivel, con bonus de mercado propio.
+- Fauna ambiental por zona (delfines, orcas, focas, ballena jorobada, narval, beluga, manatí,
+  tortuga (pocas), iguana marina, serpiente marina, pulpo, nautilo, calamar gigante, medusas,
+  krill, cangrejos, bogavantes, isópodos, almejas, vieiras, caracoles...). Solo decorado.
+- Los peces y animales ya no rebotan en los bordes: salen de pantalla y reaparecen.
+
+VISUALIZACIÓN Y RENDIMIENTO
+- El lienzo tiene una resolución fija de 960×640 y el navegador lo escala al tamaño de la
+  ventana: rápido y fluido también en equipos modestos.
+- Botón "🖥️ Visualización" (se guarda automáticamente):
+  · Efectos y partículas: Bajos / Normales / Altos (Bajos = más fluido en equipos modestos).
+  · Tamaño de interfaz y textos: Pequeño / Normal / Grande.
+  · Modo de pantalla: Ajustar / Rellenar ancho / Pantalla completa.
+  · Mostrar FPS, efectos visuales de clima, sacudida de pantalla, modo daltónico (colores de
+    rareza), alto contraste, brillo y reducir movimiento.
+- Tipografías incrustadas: "Baloo 2" (títulos/HUD) y "Nunito" (textos), ambas con licencia
+  SIL Open Font License 1.1 (fuentes de Google Fonts vía Fontsource).
+- Animación más natural: la cola bate de lado (sin estirar el dibujo), frecuencia según el
+  tamaño del pez, giros graduales sin voltear de golpe, tiburones con barrido lento,
+  Flopin aletea rápido como una cotorra de verdad.
+
+FINAL, HISTORIA Y NUEVA PARTIDA+
+- Al vencer al Kraken: secuencia animada (la barca navega hacia el atardecer, Lorenzo y
+  Flopin lo celebran, fuegos artificiales), epílogo ilustrado de 5 viñetas con texto a
+  máquina (clic = avanzar, «Saltar historia») y pantalla FIN con estadísticas (tiempo,
+  monedas, capturas, especies %, medallas, cofres, regalos de Flopin) y créditos.
+- Opciones: «Seguir jugando (modo libre)» o «Nueva partida+» (más difícil; conservas
+  medallas, colección, acuario y el aspecto de la barca).
+- Al crear partida se muestra un prólogo de 3 viñetas (también se puede saltar).
+
+SONIDO
+- Música: el tema MP3 del juego en la superficie y las primeras zonas; pistas ambientales
+  originales (WebAudio) en aguas profundas, árticas, volcánicas, el abismo y el Kraken,
+  con fundidos suaves.
+- Ambiente sintetizado: olas, salpicaduras, gaviotas, canto de ballena, burbujas bajo el
+  agua, lluvia y truenos. Deslizadores separados de MÚSICA y EFECTOS.
+- El audio se activa con el primer clic, tecla o toque (norma de los navegadores) y se
+  reactiva solo si el navegador lo suspende. Flopin habla con la voz del sistema y además
+  gorjea como una cotorra (se oye aunque el equipo no tenga voces instaladas).
+
+IDIOMA: Español / English / Português (pantalla de inicio o «Visualización»). Se guarda.
+También cambia la voz de Flopin (es-ES / en-US / pt-BR).
+
+Contacto: +56 9 6859 2839
